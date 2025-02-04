@@ -1,5 +1,6 @@
 package org.ies.zoo.model;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Zoo {
@@ -68,5 +69,17 @@ public class Zoo {
                 ", carnivoresCorral=" + carnivoresCorral +
                 ", animalCorral=" + animalCorral +
                 '}';
+    }
+
+    public void showInfo() {
+        System.out.println(zooName);
+        System.out.println("Corral de herbívoros " + herbivoresCorral.getCorralNumber());
+        System.out.println(Arrays.toString(herbivoresCorral.getAnimals()));
+
+        System.out.println("Corral de carnívoros " + carnivoresCorral.getCorralNumber());
+        System.out.println(Arrays.toString(carnivoresCorral.getAnimals()));
+
+        System.out.println("Corral de Animales " + animalCorral.getCorralNumber());
+        System.out.println(Arrays.toString(animalCorral.getAnimals()));
     }
 }

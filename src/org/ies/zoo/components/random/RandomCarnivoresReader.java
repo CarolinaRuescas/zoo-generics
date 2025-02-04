@@ -34,4 +34,5 @@ public class RandomCarnivoresReader implements Reader<Carnivores> {
                 MEATTYPE[random.nextInt(MEATTYPE.length)]
         );
     }
+
 }

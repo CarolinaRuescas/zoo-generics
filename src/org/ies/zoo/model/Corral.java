@@ -11,6 +11,11 @@ public class Corral < T extends Animal>{
         this.corralNumber = corralNumber;
         this.animals = animals;
     }
+    public void animalInfo(){
+        for (T animal : animals){
+            System.out.println(animal);
+        }
+    }
 
     public int getCorralNumber() {
         return corralNumber;
